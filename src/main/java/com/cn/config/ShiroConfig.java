@@ -56,7 +56,7 @@ public class ShiroConfig {
         filterChainDefinitionMap.put("/platform/images/**", "anon");
         filterChainDefinitionMap.put("/platform/common/**", "anon");
         filterChainDefinitionMap.put("/platform/lib/**", "anon");
-        filterChainDefinitionMap.put("//platform/**", "authc");
+        filterChainDefinitionMap.put("/platform/**", "authc");
         shiroFilterFactoryBean.setFilterChainDefinitionMap(filterChainDefinitionMap);
 
         return shiroFilterFactoryBean;
